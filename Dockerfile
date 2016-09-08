@@ -2,7 +2,8 @@ FROM java:8
 
 RUN apt-get update
 RUN apt-get install -y maven
-RUN install --global gulp-cli
+RUN npm install gulp -g
+RUN npm install --global gulp-cli
 
 WORKDIR /code
 
