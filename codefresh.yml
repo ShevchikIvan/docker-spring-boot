@@ -8,7 +8,6 @@ steps:
     dockerfile: Dockerfile
     tag: latest
     
-steps:
   build-prj:
     type: build
     description: codefresh example
