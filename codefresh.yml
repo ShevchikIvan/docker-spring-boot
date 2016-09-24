@@ -8,12 +8,6 @@ steps:
     dockerfile: Dockerfile
     tag: latest
 
-  build-step-name:
-    type: build
-    description: spring maven project
-    image-name: ncodefresh/docker-spring-boot-0
-    dockerfile: Dockerfile
-    tag: latest
 #  push-to-dockerhub:
 #    type: push
 #    candidate: ${{build-step-name}}
