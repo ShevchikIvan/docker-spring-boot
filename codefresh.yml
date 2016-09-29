@@ -19,7 +19,7 @@ steps:
     type: push
     candidate: ${{build-step-name}}
     tag: ${{CF_BRANCH}}
-    registry: #Optional
+    #registry: #Optional
     credentials: #Optional
       username: ${{username}}
       password: ${{password}}
