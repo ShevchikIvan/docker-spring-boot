@@ -15,7 +15,7 @@ steps:
     dockerfile: Dockerfile
     tag: latest
     
-  push:
+  push-to-dockerhub:
     type: push
     candidate: ${{build-step-name}}
     tag: ${{CF_BRANCH}}
