@@ -14,9 +14,6 @@ steps:
     image-name: codefreshexamples/express-angular-mongo
     dockerfile: Dockerfile
     tag: latest
-  launch:
-    type: launch-composition
-    environmentName: ${{build-step-name}}
     
 #  push-to-dockerhub:
 #    type: push
