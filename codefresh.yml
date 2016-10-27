@@ -14,16 +14,19 @@ steps:
     image-name: codefreshexamples/express-angular-mongo
     dockerfile: Dockerfile
     tag: latest
+  launch:
+    type: launch-composition
+    environmentName: ${{build-step-name}}
     
-  push-to-dockerhub:
-    type: push
-    candidate: ${{build-step-name}}
-    tag: ${{CF_BRANCH}}
+#  push-to-dockerhub:
+#    type: push
+#    candidate: ${{build-step-name}}
+#    tag: ${{CF_BRANCH}}
     #registry: #Optional
-    credentials: #Optional
-      username: ${{username}}
-      password: ${{password}}
-    fail-fast: false # default true
+#    credentials: #Optional
+#      username: ${{username}}
+#      password: ${{password}}
+#    fail-fast: false # default true
 
 #  push-to-dockerhub:
 #    type: push
