@@ -25,10 +25,10 @@ steps:
           ports:
            - 3000
     composition-candidates:
-            service:
-                image: ${{build-step-name}}
-        composition-variables:
-              - key=value
+      service:
+          image: ${{build-step-name}}
+    composition-variables:
+      - key=value
     
 #  push-to-dockerhub:
 #    type: push
