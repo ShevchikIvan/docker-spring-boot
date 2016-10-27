@@ -23,7 +23,7 @@ steps:
         env:
           image: ${{build-step-name}}
           ports:
-           - 9000
+           - 3000
     
 #  push-to-dockerhub:
 #    type: push
