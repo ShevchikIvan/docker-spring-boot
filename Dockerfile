@@ -11,7 +11,6 @@ ADD src /code/src
 ADD log.sh /code/log.sh
 
 #RUN sh ./log.sh
-RUN npm install
 
 RUN ["mvn", "package"]
 
