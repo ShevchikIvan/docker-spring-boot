@@ -14,7 +14,6 @@ steps:
     image-name: codefreshexamples/express-angular-mongo
     dockerfile: Dockerfile
     tag: latest
-    tag: ${{CF_REVISION}}
   
   launch-env:
     type: launch-composition
