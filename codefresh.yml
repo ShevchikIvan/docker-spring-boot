@@ -6,7 +6,7 @@ steps:
     description: spring maven project
     image-name: ncodefresh/docker-spring-boot-0
     dockerfile: Dockerfile
-    tag: latest
+    tag: ${{CF_BRANCH}}
     
   build-prj:
     type: build
