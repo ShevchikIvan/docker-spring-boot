@@ -6,14 +6,14 @@ steps:
     description: spring maven project
     image-name: ncodefresh/docker-spring-boot-0
     dockerfile: Dockerfile
-    tag: ${{CF_BRANCH}}
+    tag: ${{CF_REVISION}}
     
   build-prj:
     type: build
     description: codefresh example
     image-name: codefreshexamples/express-angular-mongo
     dockerfile: Dockerfile
-    tag: ${{CF_BRANCH}}
+    tag: ${{CF_REVISION}}
   
   launch-env:
     type: launch-composition
