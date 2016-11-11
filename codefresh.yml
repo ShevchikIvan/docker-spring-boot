@@ -7,7 +7,6 @@ steps:
     image-name: ncodefresh/docker-spring-boot-0
     dockerfile: Dockerfile
     tag: ${{CF_REVISION}}
-    tag: latest
     
   build-prj:
     type: build
@@ -15,7 +14,6 @@ steps:
     image-name: codefreshexamples/express-angular-mongo
     dockerfile: Dockerfile
     tag: ${{CF_REVISION}}
-    tag: latest
   
   launch-env:
     type: launch-composition
