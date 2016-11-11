@@ -13,7 +13,7 @@ steps:
     description: codefresh example
     image-name: codefreshexamples/express-angular-mongo
     dockerfile: Dockerfile
-    tag: latest
+    tag: ${{CF_BRANCH}}
   
   launch-env:
     type: launch-composition
